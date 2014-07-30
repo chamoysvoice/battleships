@@ -58,6 +58,9 @@ while(lives > 0):
 	print_board(board)
 	col = int(raw_input("Col: "))
 	row = int(raw_input("Row: "))
+        if(col > 9 or row > 9):
+                print "You're off board miss waky smartiepants"
+                continue
 	if(board[col][row] == "X"):
 		print "You already choose that one"
 		continue
